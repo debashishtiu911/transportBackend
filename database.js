@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const mongoURL='mongodb://127.0.0.1:27017/transport'
-//const mongoURL ='mongodb+srv://debashishbndm14:debashishtiu14@cluster0.iuirygo.mongodb.net/'
+//const mongoURL='mongodb://127.0.0.1:27017/transport'
+const mongoURL ='mongodb+srv://debashishbndm14:debashishtiu14@cluster0.iuirygo.mongodb.net/'
 
 mongoose.connect(mongoURL, {
 });
