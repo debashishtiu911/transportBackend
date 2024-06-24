@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+require('dotenv').config()
 //const mongoURL='mongodb://127.0.0.1:27017/transport'
-const mongoURL ='mongodb+srv://debashishbndm14:debashishtiu14@cluster0.iuirygo.mongodb.net/'
+const mongoURL =process.env.MONGO_URL
 
 mongoose.connect(mongoURL, {
 });

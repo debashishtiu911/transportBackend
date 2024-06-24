@@ -24,6 +24,7 @@ router.post('/post', async (req, res) => {
   try {
     const newBranchOffice = await branchOffice.save();
     res.status(201).json(newBranchOffice);
+    console.log("uploaded successfully");
   } catch (err) {
     res.status(400).json({ message: err.message });
   }
